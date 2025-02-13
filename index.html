@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Miku</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="init(); miku();">
+    <p id="idiot">you are now thinking Miku</p>
+    <img src="media/img/miku.gif" alt="">
+    <img src="media/img/miku.gif" alt="">
+    <img src="media/img/miku.gif" alt="">
+     <audio controls autoplay>
+  <source src="miku.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio> 
+
+    <p>
+  <button onclick="playAudio()">Play Audio</button>
+  <button onclick="pauseAudio()">Pause Audio</button>
+</p>
+
+<script>
+  function playAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+  }
+
+  function pauseAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.pause();
+  }
+</script>
+</body>
+</html>
+<script src="js/main.js"></script>
